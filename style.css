@@ -11,7 +11,7 @@ html{
 
 @media only screen and (orientation: landscape){
 body{
-    height: 50vh;
+    height: 50%;
     background-image: url(bg1.jpg);
     background-position: center;
     display: flex;
