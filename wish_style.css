@@ -39,7 +39,7 @@
        
        .cardFront {
         position: relative;
-/*         background-image: url(hsu.jpg); */
+        background-image: url(hsu.jpg);
         background-size: cover;
         background-position: center;
         animation: 1s blink linear infinite;
