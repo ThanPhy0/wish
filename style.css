@@ -8,6 +8,10 @@ html{
     justify-content: center;
 } */
 
+.portrait{
+   display:none;
+}
+
 @media only screen and (orientation: portrait) {
   /* Styles for portrait orientation */
   html, body {
