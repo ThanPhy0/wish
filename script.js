@@ -15,3 +15,22 @@ button.addEventListener('click', () => {
     // }).then(() => jsConfetti.addConfetti());
     window.location.href = 'wish.html';
 });
+
+function handleOrientationChange() {
+  const portraitDiv = document.getElementById('portrait');
+  const landscapeDiv = document.getElementById('landscape');
+  
+  if (window.matchMedia("(orientation: portrait)").matches) {
+      portraitDiv.style.display = 'block';
+      landscapeDiv.style.display = 'none';
+  } else {
+      portraitDiv.style.display = 'none';
+      landscapeDiv.style.display = 'block';
+  }
+}
+
+// Initial check on page load
+handleOrientationChange();
+
+// Listen for orientation change
+window.addEventListener('orientationchange', handleOrientationChange);
